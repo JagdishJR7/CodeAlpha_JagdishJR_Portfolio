@@ -1,0 +1,199 @@
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+  background-color: var(--darker-color);
+}
+body {
+  font-weight: 1.4rem;
+}
+
+/* navigation bar styling  */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--lighting-color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav li {
+  font-size: 22px;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-outs;
+}
+
+/* This styling is applied for all the layout  */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+section {
+  scroll-margin-top: 50px;
+}
+
+/* //// navigation bar styling completed /// */
+
+/* -------------------------------------------------- */
+
+/* ------- Secion skill styling starts -----  */
+#skills {
+  background-color: var(--bgColor);
+  padding: 30px 1%;
+  position: relative;
+}
+
+#skills .container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#skills .container .sub-title {
+  text-align: center;
+  color: white;
+  font-family: var(--hFont);
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.537);
+}
+
+#skills .container .sub-title span {
+  color: #27ae60;
+  color: #ff9933;
+}
+
+#skills .skill-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#skills .skill-cols .skill-item .skill-name-per {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#skills .skill-cols .skill-item .skill-name-per h2 {
+  color: white;
+  font-family: var(--pFont);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 19px;
+}
+
+#skills .skill-cols .skill-item .skill-outer-bar {
+  width: 100%;
+  height: 8px;
+  /* background-color: #b3c1f7; */
+  background-color: #95ad9f;
+  margin-top: 10px;
+}
+
+#skills .skill-cols .skill-item .skill-outer-bar .skill-inner-bar {
+  background-color: #04f568;
+  height: 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  #skills .skill-cols {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/* Now contact section part of the layout  */
+
+#contact {
+  background-color: var(--dark-color);
+}
+#contact h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+#contact .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+.top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.contact_way i {
+  font-size: 3rem;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+.contact_way h3 {
+  font-size: 2rem;
+}
+
+.bottam_contact {
+  max-width: 400px;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--darker-color);
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}

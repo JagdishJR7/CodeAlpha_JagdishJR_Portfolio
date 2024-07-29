@@ -1,0 +1,42 @@
+npm install nodemailer
+
+npm install googleapis firebase-functions express nodemailer dotenv
+
+package .json mai ye dalna hai :::
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0"
+  }
+}
+
+
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "A simple email sender application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0"
+  }
+}
+
+
+npm install
+npm start 
+
